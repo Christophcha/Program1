@@ -1,3 +1,10 @@
+/*
+ * Christopher Chakchay
+ * Programming fundamentals
+ * Summer 2021
+ * Programming Assignment 1 (Cipher)
+ */
+
 import java.util.Random;
 import java.util.Scanner;
 
