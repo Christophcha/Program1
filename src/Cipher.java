@@ -65,13 +65,14 @@ public class Cipher {
 		//calculates total, then prints total and random key
 		
 		int total = numberOne + numberTwo + numberThree + numberFour + numberFive; 
+		
 		System.out.println("Total: " + total); 
-		System.out.println("Your random key is : " +key); 
+		System.out.println("Your random key is : " + key); 
 		
 		int digit1 = total / 10; //take first digit of total and stores it into a new variable
 		int digit2 = total % 10; //take second digit of total and stores it into a new variable
 		
-		if (total < 10) {
+		if (total < 10) { //if total is less than 10, enters 0 as a placeholder for first digit
 		    digit1 = 0;
 		}
 		
@@ -79,6 +80,6 @@ public class Cipher {
 		int encodedDigit2 = (digit2+key)%10; //enters second digit into equation
 		
 		System.out.println("Your encoded Number is: " + encodedDigit1 + encodedDigit2); //combines and prints encoded number
-	
+		
 	}
 }
